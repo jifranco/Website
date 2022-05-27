@@ -1,0 +1,103 @@
+
+body{
+	background:repeating-linear-gradient(60deg,#b3be4a,#307c8a, #5544e9);
+	color:black;
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	letter-spacing:2px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+img{
+	position: 10px;
+}
+
+.profile-picture{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	height:auto;
+	max-width:150px;
+	border-radius: 60%;
+}
+
+
+.profile-name{
+	text-align: center;
+	padding: 30px;
+}
+.link-headers{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.links{
+	text-align:center;
+	margin-top: 20px;
+	padding:20px;
+	border: 1px solid black;
+	border-width: 2px;
+	width:200px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 45px;
+	color: inherit;
+}
+a{
+	text-decoration: none;
+	color:white;
+	transition: color 1s;
+}
+.bottom-text{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 20px;
+	font-weight:bold;
+
+}
+
+
+a:hover{
+	color:white;
+}
+
+.tom{
+    height: 300px;
+    width: 200px;
+    margin-left: -10px;
+    margin-top: -20px;
+    margin-bottom: -250px;
+    transform: rotate(25deg);
+    transform-origin: top;
+    animation: tom 6s linear infinite;
+}
+.tom-shadow{
+   position: absolute;
+   height: 5px;
+   width: 150px;
+   border-radius: 50%;
+   top: 425px;
+   bottom: 10px;
+   left: 150px;
+   box-shadow: 0px 0px 30px black;
+   background: rgba(0, 0, 0, 0.4);
+   animation: tom-shadow 6s linear infinite;
+}
+@keyframes tom{
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg);}
+    100%{transform: rotate(5deg);}
+}
+@keyframes tom-shadow{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{transform: translateX(-50px)
+    }
+}
